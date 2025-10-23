@@ -1,5 +1,6 @@
 //my fat cat generator
 
+//variables
 let GenerateCreature = false;
 let creatureWidth;
 let creatureHeight;
@@ -23,6 +24,7 @@ function draw() {
   textSize(30);
   text("Click to generate a new cat!", -400, 480);
 
+  //my custom function creature generator
   if (GenerateCreature) {
     CreatureGenerator(creatureWidth, creatureHeight, creatureColor, creatureEyeColor, creatureEarHeight, creatureChestFluffColor, creatureTailSize, creatureInsideEarColor);
   }
@@ -63,7 +65,7 @@ function draw() {
     pop();
 
     // Right ear
-   push();
+    push();
     rotate(0.3);
     translate(-30, -creatureHeight/2 - 45);
     triangle(-40, 0, 0, -creatureEarHeight * 50, 50, 0);
