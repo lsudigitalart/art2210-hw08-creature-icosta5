@@ -18,7 +18,10 @@ function setup() {
 function draw() {
   background(251, 224, 234);
   translate(width / 2, height / 2);
+  fill(0);
   strokeWeight(2);
+  textSize(30);
+  text("Click to generate a new cat!", -400, 480);
 
   if (GenerateCreature) {
     CreatureGenerator(creatureWidth, creatureHeight, creatureColor, creatureEyeColor, creatureEarHeight, creatureChestFluffColor, creatureTailSize, creatureInsideEarColor);
