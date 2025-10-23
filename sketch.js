@@ -25,7 +25,7 @@ function draw() {
   }
 }
 
-  function CreatureGenerator (creatureWidth, creatureHeight, creatureColor, creatureEyeColor, creatureEars, creatureChestFluffColor, creatureTailSize, creatureInsideEarColor) {
+  function CreatureGenerator (creatureWidth, creatureHeight, creatureColor, creatureEyeColor, creatureEarHeight, creatureChestFluffColor, creatureTailSize, creatureInsideEarColor) {
 
     //tail
     fill(creatureColor);
@@ -123,7 +123,7 @@ function draw() {
     ellipse(creatureWidth / 6, creatureHeight / 2.2, creatureWidth / 4, creatureHeight / 8);
 
   }
-
+    //mouse pressed to generate new creature function
     function mousePressed() {
     GenerateCreature = true;
     creatureWidth = random(200, 500);
