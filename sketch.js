@@ -1,4 +1,4 @@
-//my fat cat generator
+//my fat cat generator 
 
 //variables
 let GenerateCreature = false;
